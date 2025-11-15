@@ -6,39 +6,82 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff5e6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffcc00; /* McDonald's yellow */
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d40000; /* McDonald's red */
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #d40000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #d40000;
+    color: white;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #e6b800;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-items {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.container {
-    text-align: center;
-    background: #fff;
-    padding: 40px;
+.item {
+    background-color: #fff3e6;
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    background-color: #007bff;
+footer {
+    background-color: #d40000;
     color: white;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
+    text-align: center;
+    padding: 20px;
 }
