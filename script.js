@@ -1,14 +1,19 @@
-// Handle "Order Now" button
-document.getElementById("orderButton").addEventListener("click", function() {
-    alert("Redirecting you to the order page... 🍔🍟🍦");
-});
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
 
-// Make menu items clickable
-const menuItems = document.querySelectorAll(".menu-items .item");
-
-menuItems.forEach(item => {
-    item.addEventListener("click", () => {
-        const itemName = item.querySelector("h3").textContent;
-        alert(`${itemName} added to your cart! 🛒`);
+    // Handle "Order Now" button
+    const orderButton = document.getElementById("orderButton");
+    orderButton.addEventListener("click", function() {
+        alert("Thank you for ordering! 🍔🍟🍦");
     });
+
+    // Make menu items clickable
+    const menuItems = document.querySelectorAll(".menu-items .item");
+    menuItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const itemName = item.querySelector("h3").textContent;
+            alert(`${itemName} added to your cart! 🛒`);
+        });
+    });
+
 });
