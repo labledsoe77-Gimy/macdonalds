@@ -3,15 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>McDonald's Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Page</h1>
-        <button id="myButton">Click Me!</button>
-        <p id="message"></p>
-    </div>
+    <header>
+        <div class="logo">
+            🍔 McDonald's
+        </div>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to McDonald's!</h1>
+        <p>Delicious burgers, fries, and more, just for you.</p>
+        <button id="orderButton">Order Now 🍟</button>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <h3>Big Mac</h3>
+                <p>The classic double beef burger with special sauce.</p>
+            </div>
+            <div class="item">
+                <h3>French Fries</h3>
+                <p>Crispy golden fries to satisfy your cravings.</p>
+            </div>
+            <div class="item">
+                <h3>McFlurry</h3>
+                <p>Soft serve ice cream with your favorite toppings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>McDonald's has been serving smiles since 1940. Come and taste the happiness!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@mcdonalds.com</p>
+        <p>Phone: 1-800-MCDONALD</p>
+    </section>
+
+    <footer>
+        &copy; 2025 McDonald's. All rights reserved.
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
