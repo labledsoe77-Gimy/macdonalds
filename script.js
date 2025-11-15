@@ -1,4 +1,3 @@
-document.getElementById("myButton").addEventListener("click", function() {
-    const message = document.getElementById("message");
-    message.textContent = "You clicked the button! 🎉";
+document.getElementById("orderButton").addEventListener("click", function() {
+    alert("Thank you for ordering! 🍔🍟🍦");
 });
